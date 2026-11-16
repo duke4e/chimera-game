@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CHIMERA: a real-time strategy game</title>
+  <meta name="description" content="CHIMERA is a real-time strategy game for Windows: assemble an army from parts, survive the Corruption, and rewrite the laws of the battlefield with words. Early preview build.">
+  <meta name="theme-color" content="#121110">
+  <link rel="canonical" href="https://duke4e.github.io/chimera-game/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="CHIMERA: a real-time strategy game">
+  <meta property="og:description" content="Assemble an army from parts, survive the Corruption, and rewrite the laws of the battlefield with words. Early preview build for Windows.">
+  <meta property="og:url" content="https://duke4e.github.io/chimera-game/">
+  <meta property="og:image" content="https://duke4e.github.io/chimera-game/img/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@800&family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="img/hero-2560.webp" imagesrcset="img/hero-1280.webp 1280w, img/hero-2560.webp 2560w" imagesizes="100vw">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand title-grad" href="#top" aria-label="CHIMERA, back to the top">CHIMERA</a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#styles">Build styles</a>
+      <a href="#chimera">The Chimera</a>
+      <a href="#rules">Rules</a>
+      <a href="#campaign">Campaign</a>
+      <a href="#corruption">Corruption</a>
+      <a href="#modes">Modes</a>
+      <a href="#gallery">Gallery</a>
+    </nav>
+    <a class="btn btn-brass" href="#download">Download</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ===== Hero ===== -->
+  <div class="hero" id="top">
+    <div class="hero-art">
+      <img src="img/hero-2560.webp" srcset="img/hero-1280.webp 1280w, img/hero-2560.webp 2560w" sizes="100vw"
+           width="2560" height="1120" fetchpriority="high"
+           alt="The army opens fire on the Leviathan, a huge red war machine marked HOT, in the intro of the mission The Leviathan.">
+    </div>
+    <div class="wrap">
+      <p class="eyebrow">A real-time strategy game &middot; Early preview</p>
+      <h1 class="title-grad">CHIMERA</h1>
+      <span class="rule" aria-hidden="true"></span>
+      <p class="tagline">Stitch an army together from parts, outlast everything the Corruption throws at you, then rewrite the laws of the world that is trying to end you.</p>
+      <p class="sub">A strategy game for Windows with a 20-mission campaign, three ways to build a base, and rules made of words that you push into place on the battlefield.</p>
+      <div class="cta">
+        <a class="btn btn-brass" href="https://github.com/duke4e/chimera-game/releases/latest">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M11 3h2v9.6l3.3-3.3 1.4 1.4L12 16.4l-5.7-5.7 1.4-1.4 3.3 3.3V3zM4 18h16v2H4z"/></svg>
+          Download for Windows
+        </a>
+        <a class="btn btn-dark" href="#gallery">See the screenshots</a>
+      </div>
+      <ul class="badge-row">
+        <li>Windows 10 and 11</li>
+        <li>About 1.2 GB</li>
+        <li>Single player, plus 1v1 and co-op over the network</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ===== About ===== -->
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">What it is</p>
+        <h2 class="title-grad">Base, army, and the laws of the world</h2>
+        <span class="rule" aria-hidden="true"></span>
+        <p class="lead">CHIMERA is a real-time strategy game made by one developer. You build a base, gather Void Matter and Optical Fluid, raise an army and fight through missions that keep changing under you: attacks announced before they land, bonus objectives worth the detour, an enemy stronghold that starts out far too strong and ends as your playground.</p>
+        <p class="muted">Three things set it apart. Your side is put together from parts before every mission. The rules of the battlefield are sentences made of stone words that anyone can push around. And a pool of mutators called the Corruption makes sure the same mission never plays out the same way twice.</p>
+      </div>
+
+      <ul class="stats" aria-label="The game in numbers">
+        <li><b>20</b><span>campaign missions</span></li>
+        <li><b>3</b><span>ways to build a base</span></li>
+        <li><b>3</b><span>kinds of Chimera</span></li>
+        <li><b>8</b><span>production lines</span></li>
+        <li><b>45</b><span>words to write rules with</span></li>
+        <li><b>10</b><span>Corruption levels above Brutal</span></li>
+      </ul>
+
+      <div class="pillars">
+        <div class="pillar panel">
+          <h3>An army in parts</h3>
+          <p>Pick a Commander, one of three kinds of Chimera and three of eight production lines. The same units play differently under a different Commander.</p>
+        </div>
+        <div class="pillar panel">
+          <h3>Rules made of words</h3>
+          <p>Take an Altar and push words into its grid. <span class="word">WATER</span> <span class="word">IS</span> <span class="word">ICE</span> and the lake is a road.</p>
+        </div>
+        <div class="pillar panel">
+          <h3>Three ways to build</h3>
+          <p>A Construction Yard and a sidebar, Workers who warp units in, or Engineers with streaming production and a zoom out to the whole map.</p>
+        </div>
+        <div class="pillar panel">
+          <h3>The Corruption</h3>
+          <p>Strikes from the sky, storms, thieves, juggernauts, rules written against you. Every threat is announced, and every one has an answer.</p>
+        </div>
+      </div>
+
+      <div class="notice panel" role="note">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2 1 21h22L12 2zm0 4.3L19.5 19h-15L12 6.3zM11 10v5h2v-5h-2zm0 6v2h2v-2h-2z"/></svg>
+        <p><strong>This is an early preview.</strong> The whole campaign can be played from start to finish, but balance is still being tuned and missions, effects and screens are still being polished. Some of the newest story is text only for now. Feedback from this build decides what gets worked on next.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Build styles ===== -->
+  <section id="styles" class="alt">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Three Commanders</p>
+        <h2 class="title-grad">Three ways to build</h2>
+        <span class="rule" aria-hidden="true"></span>
+        <p class="lead">Your Commander decides how your base goes up and how you reach Tech 2 and Tech 3. Each one has a hero, four powers on the top bar and an interface of their own.</p>
+      </div>
+
+      <div class="styles">
+        <article class="style-card panel">
+          <div class="shot"><img src="img/castellan-800.webp" srcset="img/castellan-800.webp 800w, img/castellan-1600.webp 1600w" sizes="(max-width: 860px) 100vw, 640px" width="1600" height="900" loading="lazy" alt="Castellan's base on Glasswater Fords: structures, a Radar dish and troops by the water, with the build sidebar on the right."></div>
+          <div class="body">
+            <h3 class="title-grad">Castellan</h3>
+            <span class="kind">Construction Yard</span>
+            <blockquote>&ldquo;Walls first. Then the army. Then the world.&rdquo;</blockquote>
+            <ul>
+              <li>Structures are built one at a time from the sidebar and placed when ready, within reach of the Construction Yard.</li>
+              <li>Harvesters drive out to the Void Matter and haul it home to the Refinery; factories train units in queues.</li>
+              <li>A Radar opens Tech 2 and a Tech Center Tech 3. When the front moves, the Yard packs up and moves with it.</li>
+              <li><b>Hold Fast:</b> your structures have 30% more health and shield, and the Yard fires on anything that comes too close.</li>
+            </ul>
+            <p class="powers"><b>Powers:</b> Tithe Wagon &middot; Bombardment &middot; Flak Curtain &middot; Last Bastion</p>
+          </div>
+        </article>
+
+        <article class="style-card panel">
+          <div class="shot"><img src="img/pilgrim-800.webp" srcset="img/pilgrim-800.webp 800w, img/pilgrim-1600.webp 1600w" sizes="(max-width: 860px) 100vw, 640px" width="1600" height="900" loading="lazy" alt="Pilgrim's base: the Headquarters and factories, a unit warping in with a cyan glow, and the word tiles WATER and ICE at the edge."></div>
+          <div class="body">
+            <h3 class="title-grad">Pilgrim</h3>
+            <span class="kind">Workers</span>
+            <blockquote>&ldquo;Wherever I stand, the choir can sing.&rdquo;</blockquote>
+            <ul>
+              <li>Workers raise structures where they stand and carry Void Matter back to the Headquarters.</li>
+              <li>Units Warp In: you call them straight into a lit Warp Field near the fight.</li>
+              <li>The Headquarters grows into a Chapter House for Tech 2, then a Cathedral for Tech 3.</li>
+              <li>The Pilgrim is a hero who walks with the army. <b>Every Road a Choir:</b> your units warp in a third sooner.</li>
+            </ul>
+            <p class="powers"><b>Powers:</b> Second Wind &middot; Gathering &middot; Clear Sight &middot; Throng</p>
+          </div>
+        </article>
+
+        <article class="style-card panel">
+          <div class="shot"><img src="img/magister-800.webp" srcset="img/magister-800.webp 800w, img/magister-1600.webp 1600w" sizes="(max-width: 860px) 100vw, 640px" width="1600" height="900" loading="lazy" alt="Magister's interface over a massed army on The Megalith: economy bars top left, the map window top right, quick selection down the right edge."></div>
+          <div class="body">
+            <h3 class="title-grad">Magister</h3>
+            <span class="kind">Engineers</span>
+            <blockquote>&ldquo;I do not command the choir. I am the first voice in it.&rdquo;</blockquote>
+            <ul>
+              <li>The Magister and the Engineers build by standing beside the work; extractors give a steady income.</li>
+              <li>Production streams: nothing is paid up front, everything draws resources while it is being made, and bars at the top left show when you spend faster than you earn.</li>
+              <li>Each line has Tech 1, 2 and 3 factories, with Pause and Repeat on their queues.</li>
+              <li>A strategic zoom pulls the camera out until the whole map is one picture. <b>Master of Works:</b> the Magister builds four times as fast as a Worker.</li>
+            </ul>
+            <p class="powers"><b>Powers:</b> Overflow &middot; Gavel Strike &middot; Ring of Bells &middot; Great Silence</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== The Chimera ===== -->
+  <section id="chimera">
+    <div class="wrap">
+      <div class="split">
+        <div class="section-head">
+          <p class="eyebrow">Your side</p>
+          <h2 class="title-grad">The Chimera you assemble</h2>
+          <span class="rule" aria-hidden="true"></span>
+          <p class="lead">The Chimera are the peoples the Choir silenced, stitched together into one army. Before each mission you decide what yours is made of.</p>
+          <p class="muted">Every production line can fight air, every base can build detection and anti-air defences, and a mission's briefing tells you what it will ask of your army.</p>
+        </div>
+        <figure class="frame panel">
+          <img src="img/chimera-screen-800.webp" srcset="img/chimera-screen-800.webp 800w, img/chimera-screen-1600.webp 1600w" sizes="(max-width: 900px) 100vw, 560px" width="1600" height="900" loading="lazy" alt="The Commander and Chimera screen: three Commanders on the left, the three kinds of Chimera and eight production lines on the right, three of them picked.">
+          <figcaption>The Commander and Chimera screen before a mission.</figcaption>
+        </figure>
+      </div>
+
+      <div class="assemble">
+        <div class="step panel">
+          <h3>A Commander</h3>
+          <p>Castellan, Pilgrim or Magister: how you build, a hero, four powers on the top bar. Commanders level up to 15 and open talents on the way.</p>
+        </div>
+        <div class="step panel">
+          <h3>A kind of Chimera</h3>
+          <ul class="kinds">
+            <li><b>Shellsong</b>Shields go offline when hit and stay down until restarted. Units warp in as charges fill.</li>
+            <li><b>Dynamo Grid</b>One power grid runs the base. Uplinks speed up factories; a badly hurt structure goes into Lockdown.</li>
+            <li><b>Ossuary</b>The fallen leave bone. Bring it home to raise them again, and wear it as armour.</li>
+          </ul>
+        </div>
+        <div class="step panel">
+          <h3>Three production lines</h3>
+          <p>Choose three of eight. Each line is one structure that makes five units, from a cheap core unit to a heavy one, each with a trick of its own.</p>
+          <p>At Tech 3 the <b>Graft Vat</b> fuses two units from different lines into a hybrid, up to three at a time.</p>
+        </div>
+      </div>
+
+      <ul class="lines" aria-label="The eight production lines">
+        <li class="line" style="--c:#9b6bff"><b>Veilsworn</b><span>Close combat and breaking in: blades that strike from cloak, a cloaked sniper.</span><i>Penitent &middot; Thresher &middot; Vesper &middot; Hermit &middot; Eclipse</i></li>
+        <li class="line" style="--c:#4aa8ff"><b>Conductors</b><span>Range, siege and casters. Every bolt adds Static; a Maestro sets it all off at once.</span><i>Ion &middot; Arrestor &middot; Pendulum &middot; Maestro &middot; Capacitor</i></li>
+        <li class="line" style="--c:#62d26f"><b>Rookery</b><span>The air: flyers that carry infantry into battle, lift enemies and drop them.</span><i>Swift &middot; Shrike &middot; Harrier &middot; Ossifrage &middot; Roc</i></li>
+        <li class="line" style="--c:#f0953a"><b>Thornwake</b><span>A garden that plants its army: units grow from seeds and roots mend them.</span><i>Thornling &middot; Pollinator &middot; Mireroot &middot; Grafter &middot; Elder Ent</i></li>
+        <li class="line" style="--c:#e055b8"><b>Orbwrights</b><span>Smiths of orbs: relayed shots, discs that stop fire, a Lodestar that pulls enemies in.</span><i>Slinger &middot; Halo Warden &middot; Lodestar &middot; Astrolabe &middot; Planetarium</i></li>
+        <li class="line" style="--c:#f2d63c"><b>Horologists</b><span>Keepers of time: hits that make enemies Lag, Stasis, and a Rewind for your own.</span><i>Tick &middot; Escapement &middot; Second Hand &middot; Chronarch &middot; Belltower</i></li>
+        <li class="line" style="--c:#ef4b45"><b>Lexicants</b><span>Rules in the army: units that read what they hit and write rules in a ring as they walk.</span><i>Inkling &middot; Quill &middot; Redactor &middot; Rubricator &middot; Codex</i></li>
+        <li class="line" style="--c:#3fd6c0"><b>Mirrorkin</b><span>Glass and silver: enemies fight for you as glass a while, and mirrors turn shots back.</span><i>Shard &middot; Prism &middot; Mimic &middot; Silverer &middot; Looking-Glass</i></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== Rules ===== -->
+  <section id="rules" class="alt">
+    <div class="wrap">
+      <div class="split">
+        <div>
+          <p class="eyebrow">The battlefield's laws</p>
+          <h2 class="title-grad">Rules made of words</h2>
+          <span class="rule" aria-hidden="true"></span>
+          <p class="lead">In CHIMERA the laws of the world are sentences, and the sentences are stone tiles lying on the map.</p>
+          <p class="muted"><span class="word">PLAYER</span> <span class="word">IS</span> <span class="word">YOU</span>. <span class="word">WALL</span> <span class="word">IS</span> <span class="word">STOP</span>. <span class="word">WATER</span> <span class="word">IS</span> <span class="word">SINK</span>. Take an Altar, have your units carry and push words into its grid, and the new sentence holds across that whole part of the map. Three words in a row on open ground make a smaller rule around them.</p>
+          <ul class="examples">
+            <li><span class="word">WATER</span> <span class="word">IS</span> <span class="word">ICE</span> freezes a lake so your army can walk across.</li>
+            <li><span class="word">ENEMY</span> <span class="word">IS</span> <span class="word">WEAK</span> breaks them at the first hit.</li>
+            <li><span class="word">WAVE</span> <span class="word">IS</span> <span class="word">SLEEP</span> stops an attack where it stands.</li>
+            <li><span class="word">GATE</span> <span class="word">IS</span> <span class="word">NOT</span> <span class="word">STOP</span> opens a way the map wanted shut.</li>
+          </ul>
+          <p class="muted" style="margin-top:18px">Rules take no sides. The Corruption writes too: its Scribes carry words to the Altars, and every change it makes is announced a few seconds before it locks in. Words can't be destroyed, only pushed, carried, sunk, or turned into something else.</p>
+        </div>
+        <div>
+          <div class="altar panel" id="altar">
+            <h3>Try an Altar</h3>
+            <div class="tiles">
+              <button class="tile" type="button" data-slot="subject" data-g="noun">WATER</button>
+              <span class="tile" data-g="noun" aria-hidden="true">IS</span>
+              <button class="tile" type="button" data-slot="object" data-g="noun">ICE</button>
+            </div>
+            <p class="altar-out" aria-live="polite"><b>WATER IS ICE</b><br>The lake freezes over and your army walks straight across it.</p>
+            <p class="altar-hint">Press a word to push the next one into its place.</p>
+          </div>
+          <figure class="frame panel" style="margin-top:22px">
+            <img src="img/altar-800.webp" srcset="img/altar-800.webp 800w, img/altar-1600.webp 1600w" sizes="(max-width: 900px) 100vw, 560px" width="1600" height="900" loading="lazy" alt="The Ember Altar: a grid of stone word tiles where BOSS IS NOT HOT is lit up, with the word SAFE beside it.">
+            <figcaption>The Ember Altar in The Leviathan: BOSS IS NOT HOT takes the monster's heat away.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Campaign ===== -->
+  <section id="campaign">
+    <div class="wrap">
+      <div class="split flip">
+        <div>
+          <p class="eyebrow">The campaign</p>
+          <h2 class="title-grad">The Last Hymn</h2>
+          <span class="rule" aria-hidden="true"></span>
+          <p class="lead">The Choir once sang the world's laws and kept its Altars. Now its master, the Precentor, is composing the Last Hymn: a song that names everything allowed to remain, forever and unchanging. Whatever it leaves out was never there at all.</p>
+          <p class="muted">Its refrain is <span class="word">PLAYER</span> <span class="word">IS</span> <span class="word">NOT</span> <span class="word">YOU</span>. Compline, a singer who walked out of the Choir, leads the Chimera against it aboard the Carillon: the last free bell, a walking bell-tower fortress whose tone the Choir cannot drown out.</p>
+          <p class="muted">Twenty missions, each built around a hook of its own: a stealth mission past Lanterns whose light burns through the dark, a convoy that walks by itself, a city to relight district by district, a world being erased from the west while your base runs ahead of the edge. One choice in the Saltmarsh splits the path.</p>
+        </div>
+        <figure class="frame panel">
+          <img src="img/chart-room-800.webp" srcset="img/chart-room-800.webp 800w, img/chart-room-1600.webp 1600w" sizes="(max-width: 900px) 100vw, 560px" width="1600" height="900" loading="lazy" alt="The Chart Room: a painted world map with the campaign's missions joined by routes, the acts marked in colour, and the briefing for Cathedral on the right.">
+          <figcaption>The Chart Room in Act IV: the world map, and Compline's briefing for Cathedral.</figcaption>
+        </figure>
+      </div>
+
+      <ol class="acts" aria-label="The acts of the campaign">
+        <li class="act"><b>Act I: Low Tide</b><span>Ebbwater floods for the Choir. Compline escapes it, and the Chimera is stitched together on the coast.</span></li>
+        <li class="act"><b>Act II: The Lettered Lands</b><span>The Choir rewrites the laws of the world word by word. Steal the score of its Last Hymn.</span></li>
+        <li class="act"><b>Act III: Salt and Fire</b><span>The Choir's servants wake across the world: a relic, a Leviathan, a Megalith, the ice.</span></li>
+        <li class="act"><b>Interlude: The Grid</b><span>Far to the east, Volta's Grid holds out alone.</span></li>
+        <li class="act"><b>Act IV: The Last Hymn</b><span>The Hymn begins. Everything the Choir hasn't sung is being unwritten.</span></li>
+      </ol>
+
+      <div class="split" style="margin-top:56px">
+        <figure class="frame panel">
+          <img src="img/carillon-800.webp" srcset="img/carillon-800.webp 800w, img/carillon-1600.webp 1600w" sizes="(max-width: 900px) 100vw, 560px" width="1600" height="900" loading="lazy" alt="The Commons aboard the Carillon: the Abbess of the Saltmarsh and the Gunwarden stand in the camp, with the news and Mercenaries for hire on the right.">
+          <figcaption>The Commons: the crew, the news from the road, and Mercenaries for hire.</figcaption>
+        </figure>
+        <div>
+          <h3 class="title-grad" style="font-size:1.8rem">Between missions: the Carillon</h3>
+          <span class="rule" aria-hidden="true"></span>
+          <ul class="rooms">
+            <li><b>Chart Room:</b> the world map, the open missions and their briefings.</li>
+            <li><b>Forge:</b> upgrades for each unit, bought with the credits a mission pays.</li>
+            <li><b>Scriptorium:</b> research, one of two choices on every tier, changeable later.</li>
+            <li><b>Vat:</b> change your Commander and what your Chimera is made of.</li>
+            <li><b>Commons:</b> the crew, their talks and news, and Mercenaries to hire.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Corruption ===== -->
+  <section id="corruption" class="alt">
+    <div class="wrap">
+      <div class="split">
+        <div>
+          <p class="eyebrow">Difficulty, and then some</p>
+          <h2 class="title-grad">The Corruption</h2>
+          <span class="rule" aria-hidden="true"></span>
+          <p class="lead">Easy, Normal, Hard and Brutal decide how hard the enemy hits. Above Brutal, the Corruption takes over.</p>
+          <p class="muted">Ten Corruption levels each draw mutators from a pool of about thirty, up to five at once, and from the seventh level permanent rules stack on top. Levels open as you win. No threat kills you unseen: each one has a circle on the ground, an icon and a warning, and each one has an answer in your army.</p>
+          <ol class="ladder" aria-label="Corruption levels K1 to K10">
+            <li>K1</li><li>K2</li><li>K3</li><li>K4</li><li>K5</li><li>K6</li><li>K7</li><li>K8</li><li>K9</li><li>K10</li>
+          </ol>
+          <ul class="chips" aria-label="Some of the mutators">
+            <li>Corruption Strike</li><li>Hot Drops</li><li>Volatile Cores</li><li>Undying Host</li><li>Wandering Storm</li>
+            <li>Ember Vents</li><li>Rule Storm</li><li>Mirror Ink</li><li>Restless Words</li><li>Drought</li>
+            <li>Myopia</li><li>Heavy Feet</li><li>Tight Deadline</li><li>The Juggernaut</li><li>The Thief</li>
+          </ul>
+          <p class="muted" style="margin-top:20px">Every week a <b>Weekly Mutation</b> sets a mission against a hand-picked set of mutators, such as Doomsday Choir, Ink Storm or Juggernaut Season.</p>
+        </div>
+        <figure class="frame panel">
+          <img src="img/corruption-800.webp" srcset="img/corruption-800.webp 800w, img/corruption-1600.webp 1600w" sizes="(max-width: 900px) 100vw, 560px" width="1600" height="900" loading="lazy" alt="Corruption level 10 over a Castellan base: a row of mutator icons at the top left and the warning CORRUPTION STRIKE INCOMING.">
+          <figcaption>Corruption K10: five mutators at once, every strike announced before it lands.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Modes ===== -->
+  <section id="modes">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Ways to play</p>
+        <h2 class="title-grad">Modes</h2>
+        <span class="rule" aria-hidden="true"></span>
+      </div>
+      <div class="modes">
+        <article class="mode panel">
+          <span class="tag">Story</span>
+          <h3>Campaign</h3>
+          <p>The Last Hymn: twenty missions in four acts and an interlude, with the Carillon as your home between them.</p>
+        </article>
+        <article class="mode panel">
+          <span class="tag">Missions</span>
+          <h3>Operations</h3>
+          <p>Twelve missions outside the story, with your own Commander and Chimera, any difficulty and any Corruption level you have opened.</p>
+          <p>Each has a practice with a Tutorial mode that walks you through what it asks.</p>
+        </article>
+        <article class="mode panel">
+          <span class="tag">Against the AI</span>
+          <h3>Skirmish</h3>
+          <p>Any map, against the Corruption or against an AI Chimera that builds a base from the same parts you do. Easy to Brutal, six plans from Rush to Turtle.</p>
+          <p>Set starting resources, Tech and Supply caps, a peaceful start, fast building or a revealed map. Sunspire Basin and Glasswater Fords are made for fair one-on-one duels.</p>
+        </article>
+        <article class="mode panel">
+          <span class="tag">Two players</span>
+          <h3>Multiplayer</h3>
+          <p>A 1v1 Match, or Co-op Operations side by side, over the network. One player hosts and the other joins at the host's address.</p>
+          <p class="small">Early days: there is no matchmaking or relay server yet, so it needs a direct connection, and missions aren't balanced for two players yet.</p>
+        </article>
+        <article class="mode panel">
+          <span class="tag">Learn</span>
+          <h3>Academy</h3>
+          <p>Lessons from First Steps to each build style, each kind of Chimera, each production line and the Graft Vat.</p>
+          <p>Six challenges with bronze, silver and gold medals: Focus Fire, Hold the Ramp, Macro Sprint and more.</p>
+        </article>
+        <article class="mode panel">
+          <span class="tag">Progress</span>
+          <h3>Levels and unlocks</h3>
+          <p>Every mission gives experience to your Commander and to the parts you brought. New production lines and kinds of Chimera open as you win.</p>
+          <p>Want to try everything at once? Options has an Unlock everything switch.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Gallery ===== -->
+  <section id="gallery" class="alt">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">From the current build</p>
+        <h2 class="title-grad">Screenshots</h2>
+        <span class="rule" aria-hidden="true"></span>
+        <p class="muted">All taken in the game as it is today. Select a picture to see it large; use the arrow keys to step through.</p>
+      </div>
+      <ul class="gallery">
+        <!-- GALLERY -->
+        <li><a href="img/leviathan-1600.webp" data-lightbox data-caption="The Leviathan&#x27;s intro. Every mission opens with a short scene that shows what it is about."><img src="img/leviathan-800.webp" width="800" height="450" loading="lazy" alt="The army opens fire on the Leviathan, a huge red war machine marked HOT, inside a pink warning ring, in the mission&#x27;s intro."><span>The Leviathan</span></a></li>
+        <li><a href="img/castellan-1600.webp" data-lightbox data-caption="Castellan builds one structure at a time from the sidebar on the right."><img src="img/castellan-800.webp" width="800" height="450" loading="lazy" alt="Castellan&#x27;s base on Glasswater Fords: structures, a Radar dish and troops by the water, with the build sidebar on the right."><span>Castellan</span></a></li>
+        <li><a href="img/pilgrim-1600.webp" data-lightbox data-caption="Pilgrim&#x27;s Workers build on the spot, and units warp in beside the Headquarters."><img src="img/pilgrim-800.webp" width="800" height="450" loading="lazy" alt="Pilgrim&#x27;s base: the Headquarters and factories, a unit warping in with a cyan glow, and the word tiles WATER and ICE at the edge."><span>Pilgrim</span></a></li>
+        <li><a href="img/magister-1600.webp" data-lightbox data-caption="Magister&#x27;s own interface. On the ground, three words make a rule around them: BOSS IS SLEEP."><img src="img/magister-800.webp" width="800" height="450" loading="lazy" alt="Magister&#x27;s interface over a massed army on The Megalith: economy bars top left, the map window top right, three word tiles reading BOSS IS SLEEP."><span>Magister</span></a></li>
+        <li><a href="img/magister-zoom-1600.webp" data-lightbox data-caption="Magister can zoom out until the whole map is one picture."><img src="img/magister-zoom-800.webp" width="800" height="450" loading="lazy" alt="The strategic zoom: the whole map of The Megalith at once, the army shown as blue markers on dark ground."><span>Strategic zoom</span></a></li>
+        <li><a href="img/altar-1600.webp" data-lightbox data-caption="BOSS IS NOT HOT: the Ember Altar takes the Leviathan&#x27;s heat away."><img src="img/altar-800.webp" width="800" height="450" loading="lazy" alt="The Ember Altar: a grid of stone word tiles where BOSS IS NOT HOT is lit up, with the word SAFE beside it."><span>The Ember Altar</span></a></li>
+        <li><a href="img/duel-1600.webp" data-lightbox data-caption="A duel against an AI Chimera on Sunspire Basin. The word ENEMY is one push away from the Altar&#x27;s sentence."><img src="img/duel-800.webp" width="800" height="450" loading="lazy" alt="A duel on Sunspire Basin: an Altar reading PLAYER IS FAST, the word ENEMY one tile away, a lone unit beside it."><span>A duel</span></a></li>
+        <li><a href="img/chart-room-1600.webp" data-lightbox data-caption="The Chart Room in Act IV: the world map, and Compline&#x27;s briefing for Cathedral."><img src="img/chart-room-800.webp" width="800" height="450" loading="lazy" alt="The Chart Room: a painted world map with the campaign&#x27;s missions joined by routes, the acts marked in colour, and the briefing for Cathedral on the right."><span>Chart Room</span></a></li>
+        <li><a href="img/carillon-1600.webp" data-lightbox data-caption="The Commons: the crew, the news from the road, and Mercenaries for hire."><img src="img/carillon-800.webp" width="800" height="450" loading="lazy" alt="The Commons aboard the Carillon: the Abbess of the Saltmarsh and the Gunwarden stand in the camp, with the news and Mercenaries for hire on the right."><span>The Carillon</span></a></li>
+        <li><a href="img/chimera-screen-1600.webp" data-lightbox data-caption="Before a mission: a Commander, a kind of Chimera and three production lines."><img src="img/chimera-screen-800.webp" width="800" height="450" loading="lazy" alt="The Commander and Chimera screen: three Commanders on the left, three kinds of Chimera and eight production lines on the right."><span>Commander and Chimera</span></a></li>
+        <li><a href="img/corruption-1600.webp" data-lightbox data-caption="At K10 the Corruption runs five mutators at once, and every strike is announced before it lands."><img src="img/corruption-800.webp" width="800" height="450" loading="lazy" alt="Corruption level 10 over a Castellan base: a row of mutator icons at the top left and the warning CORRUPTION STRIKE INCOMING."><span>Corruption K10</span></a></li>
+        <li><a href="img/cathedral-1600.webp" data-lightbox data-caption="Cathedral: storming the Choir&#x27;s seat by night, with the Precentor in the nave."><img src="img/cathedral-800.webp" width="800" height="450" loading="lazy" alt="Night at the Cathedral: the red Precentor towers over the steps while the army fights through explosions."><span>Cathedral</span></a></li>
+        <li><a href="img/unwriting-1600.webp" data-lightbox data-caption="The Unwriting: the world is erased from the west, and the base has to keep ahead of the edge."><img src="img/unwriting-800.webp" width="800" height="450" loading="lazy" alt="The Unwriting: a white blankness erases the map from the west while the army and its base move east."><span>The Unwriting</span></a></li>
+        <li><a href="img/last-verse-1600.webp" data-lightbox data-caption="Last Verse, the campaign&#x27;s final mission, at the Last Altar."><img src="img/last-verse-800.webp" width="800" height="450" loading="lazy" alt="Last Verse: the Last Altar ringed with light in the dark, the army gathered on its tiles, Compline speaking."><span>Last Verse</span></a></li>
+        <li><a href="img/blackout-1600.webp" data-lightbox data-caption="Blackout: the interlude&#x27;s city, relit district by district."><img src="img/blackout-800.webp" width="800" height="450" loading="lazy" alt="Blackout: a Pilgrim base at night, lit by lamps, with markers for the city&#x27;s districts to relight."><span>Blackout</span></a></li>
+        <li><a href="img/ice-border-1600.webp" data-lightbox data-caption="The Ice Border: one push makes ICE IS WATER, and the column on the ice goes under."><img src="img/ice-border-800.webp" width="800" height="450" loading="lazy" alt="The Ice Border&#x27;s intro: an enemy column stands on breaking ice as dark water opens around it."><span>The Ice Border</span></a></li>
+        <li><a href="img/skirmish-setup-1600.webp" data-lightbox data-caption="Skirmish on any map, against the Corruption or an AI Chimera."><img src="img/skirmish-setup-800.webp" width="800" height="450" loading="lazy" alt="The Skirmish screen: a list of maps, options for the opponent, build style, difficulty, Corruption, resources and caps, and a map preview."><span>Skirmish</span></a></li>
+        <li><a href="img/title-1600.webp" data-lightbox data-caption="The title screen."><img src="img/title-800.webp" width="800" height="450" loading="lazy" alt="The title screen: CHIMERA, and the buttons Solo, Multiplayer, Load Game, Options, Credits and Exit over a live scene."><span>Title screen</span></a></li>
+        <!-- /GALLERY -->
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== Download ===== -->
+  <section id="download">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Play the preview</p>
+        <h2 class="title-grad">Download and run</h2>
+        <span class="rule" aria-hidden="true"></span>
+        <p class="lead">Nothing to install: the game is one folder you unzip and run.</p>
+      </div>
+
+      <div class="dl">
+        <div class="panel">
+          <h3>System requirements</h3>
+          <dl class="specs">
+            <dt>System</dt><dd>Windows 10 or 11, 64-bit</dd>
+            <dt>Graphics</dt><dd>A graphics card with Vulkan support and an up-to-date driver</dd>
+            <dt>Disk</dt><dd>About 1.2 GB to download, 1.4 GB unpacked</dd>
+            <dt>Settings</dt><dd>Graphics presets from Low to Ultra, a render scale, windowed or full screen</dd>
+            <dt>Text</dt><dd>English</dd>
+          </dl>
+          <p class="muted small" style="margin-top:16px">Minimum specs haven't been measured yet. If the game runs well, or badly, on your machine, please say so in an issue: it helps.</p>
+          <div class="cta">
+            <a class="btn btn-brass" href="https://github.com/duke4e/chimera-game/releases/latest">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M11 3h2v9.6l3.3-3.3 1.4 1.4L12 16.4l-5.7-5.7 1.4-1.4 3.3 3.3V3zM4 18h16v2H4z"/></svg>
+              Download the latest build
+            </a>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h3>How to run it</h3>
+          <ol class="steps-list">
+            <li>Download the zip from the <a href="https://github.com/duke4e/chimera-game/releases/latest">latest release</a>.</li>
+            <li>Unzip the whole folder somewhere you can write to, such as <code>C:\Games\</code>, not Program Files. Keep that path short (89 characters at most), because some files sit deep inside.</li>
+            <li>Run <code>CHIMERA.exe</code>. The build isn't signed, so Windows may warn about an unknown publisher: choose <b>More info</b>, then <b>Run anyway</b>.</li>
+            <li>The game opens full screen; <kbd>Alt</kbd>+<kbd>Enter</kbd> or Options switches to a window. Press <kbd>F1</kbd> in a mission for the controls.</li>
+          </ol>
+          <details class="trouble">
+            <summary>If something goes wrong</summary>
+            <ul>
+              <li>Settings, progress, saves and the log live in <code>%APPDATA%\CHIMERA</code>. Delete that folder for a completely fresh start.</li>
+              <li>If the game doesn't start, the reason is in <code>%APPDATA%\CHIMERA\chimera.log</code>. Without Vulkan (very old integrated graphics, Remote Desktop) it can't start.</li>
+              <li>Rarely the game closes the moment it starts, before its window shows. Just start it again.</li>
+              <li>If the unzipper says a path is too long or skips files, unzip into a shorter folder such as <code>C:\Games\</code>.</li>
+            </ul>
+          </details>
+        </div>
+      </div>
+
+      <div class="panel" style="margin-top:22px;padding:26px 28px">
+        <h3 style="margin-bottom:14px">Controls at a glance</h3>
+        <dl class="controls">
+          <div><dt>Select</dt><dd>Left click or drag a box; <kbd>Shift</kbd> adds</dd></div>
+          <div><dt>Move or attack</dt><dd>Right click</dd></div>
+          <div><dt>Attack-move</dt><dd><kbd>A</kbd> then click</dd></div>
+          <div><dt>Stop / hold position</dt><dd><kbd>S</kbd> / <kbd>H</kbd></dd></div>
+          <div><dt>Control groups</dt><dd><kbd>Ctrl</kbd>+<kbd>1</kbd>&hellip;<kbd>0</kbd>, then <kbd>1</kbd>&hellip;<kbd>0</kbd></dd></div>
+          <div><dt>Whole army</dt><dd><kbd>F2</kbd></dd></div>
+          <div><dt>Camera</dt><dd>Arrows, screen edge or middle mouse; wheel zooms</dd></div>
+          <div><dt>Command card</dt><dd><kbd>Q</kbd> <kbd>W</kbd> <kbd>E</kbd> <kbd>R</kbd> / <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd> <kbd>F</kbd> / <kbd>Z</kbd> <kbd>X</kbd> <kbd>C</kbd> <kbd>V</kbd></dd></div>
+          <div><dt>Commander powers</dt><dd><kbd>F5</kbd>&hellip;<kbd>F8</kbd></dd></div>
+          <div><dt>Pick up a word</dt><dd>Right click it with units selected</dd></div>
+          <div><dt>Push a word</dt><dd><kbd>P</kbd> then click the word</dd></div>
+          <div><dt>Pause and menu</dt><dd><kbd>Esc</kbd></dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Feedback ===== -->
+  <section id="feedback" class="feedback alt">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Tell us</p>
+        <h2 class="title-grad">Feedback is the point</h2>
+        <span class="rule" aria-hidden="true"></span>
+        <p class="lead">Found a bug, hit a crash, got stuck on a mission, or have an idea? Open an issue on GitHub. Say what you were doing, which Commander and mission, and for a crash attach <code>%APPDATA%\CHIMERA\chimera.log</code>.</p>
+      </div>
+      <div class="cta">
+        <a class="btn btn-brass" href="https://github.com/duke4e/chimera-game/issues/new">Open an issue</a>
+        <a class="btn btn-dark" href="https://github.com/duke4e/chimera-game/issues">Read existing issues</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><b class="title-grad" style="font-family:var(--display)">CHIMERA</b> &copy; 2026 duke4e. All rights reserved. This repository holds the website and the game's releases only; no licence to the game, its code or its art is granted.</p>
+    <p>Music, fonts, textures, models and sounds by other authors are used under their licences and credited in the game's Credits screen. This page uses Exo 2 and Titillium Web (SIL Open Font License).</p>
+  </div>
+</footer>
+
+<dialog class="lightbox" id="lightbox" aria-label="Screenshot viewer">
+  <span class="lb-count"></span>
+  <div class="lb-stage"><img alt=""></div>
+  <p class="lb-cap"></p>
+  <button class="lb-btn lb-close" type="button" aria-label="Close">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.4 5 5 6.4 10.6 12 5 17.6 6.4 19 12 13.4 17.6 19 19 17.6 13.4 12 19 6.4 17.6 5 12 10.6z"/></svg>
+  </button>
+  <button class="lb-btn lb-prev" type="button" aria-label="Previous screenshot">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M15.4 5 8.4 12l7 7 1.4-1.4L11.2 12l5.6-5.6z"/></svg>
+  </button>
+  <button class="lb-btn lb-next" type="button" aria-label="Next screenshot">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m8.6 5-1.4 1.4 5.6 5.6-5.6 5.6L8.6 19l7-7z"/></svg>
+  </button>
+</dialog>
+
+<script src="main.js" defer></script>
+</body>
+</html>
