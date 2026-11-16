@@ -2,7 +2,7 @@
 
 # CHIMERA
 
-**Stitch an army together from parts, outlast everything the Corruption throws at you, then rewrite the laws of the world that is trying to end you.**
+**Stitch an army together from parts, hold out against the Corruption, and rewrite the laws of the battlefield with words.**
 
 CHIMERA is a real-time strategy game for Windows, made by one developer. Build a base, gather Void Matter and Optical Fluid, raise an army, and fight through a 20-mission campaign where the rules of the battlefield are sentences made of stone words that you push into place.
 

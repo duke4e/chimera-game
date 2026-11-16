@@ -117,10 +117,17 @@ code { font-family: Consolas, "Cascadia Mono", monospace; font-size: 0.92em; col
     linear-gradient(180deg, #f1c27d 0%, #d99c55 48%, #b97a3d 100%);
   box-shadow: inset 0 2px 0 rgba(255, 240, 210, 0.55), inset 0 -3px 0 rgba(80, 45, 15, 0.45);
 }
+/* The dark button's frame is its own background, the face a layer 2px inside it cut the same way, so
+   the brass edge follows the bevelled corners (an inset shadow would be clipped away there). */
 .btn-dark {
+  position: relative; isolation: isolate;
   color: var(--text);
+  background: linear-gradient(160deg, #8c6a3e, #5d4930 40%, #3a2e20 70%, #7a5c36);
+}
+.btn-dark::before {
+  content: ""; position: absolute; inset: 2px; z-index: -1;
   background: linear-gradient(180deg, #24211d, #171513);
-  box-shadow: inset 0 0 0 2px #5d4930, inset 0 0 0 3px #0e0d0c;
+  clip-path: polygon(calc(var(--cut) - 1px) 0, 100% 0, 100% calc(100% - var(--cut) + 1px), calc(100% - var(--cut) + 1px) 100%, 0 100%, 0 calc(var(--cut) - 1px));
 }
 .btn small { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.04em; opacity: 0.8; text-transform: none; }
 .btn svg { width: 20px; height: 20px; flex: none; }
@@ -208,8 +215,14 @@ section + section { border-top: 1px solid rgba(217, 163, 90, 0.1); }
 .style-card { display: grid; grid-template-columns: 1.25fr 1fr; overflow: hidden; }
 .style-card:nth-child(even) { grid-template-columns: 1fr 1.25fr; }
 .style-card:nth-child(even) .shot { order: 2; }
-.style-card .shot { position: relative; min-height: 260px; background: #000; }
-.style-card .shot img { width: 100%; height: 100%; object-fit: cover; }
+/* The whole screenshot, never cropped (a crop cut the HUD in half): centred at its own 16:9, the
+   room the text leaves above and below filled with a dim, blurred copy of it. */
+.style-card .shot { position: relative; min-height: 260px; background: #000; overflow: hidden; display: grid; align-items: center; }
+.style-card .shot::before {
+  content: ""; position: absolute; inset: -30px;
+  background: var(--shot) center / cover; filter: blur(18px) brightness(0.4) saturate(0.85);
+}
+.style-card .shot img { position: relative; width: 100%; height: auto; box-shadow: 0 0 30px rgba(0, 0, 0, 0.6); }
 .style-card .body { padding: 28px 30px; }
 .style-card h3 { font-size: 1.9rem; }
 .style-card .kind { display: inline-block; font: 700 0.78rem/1 var(--body); letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin: 8px 0 6px; }
