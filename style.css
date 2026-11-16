@@ -215,14 +215,10 @@ section + section { border-top: 1px solid rgba(217, 163, 90, 0.1); }
 .style-card { display: grid; grid-template-columns: 1.25fr 1fr; overflow: hidden; }
 .style-card:nth-child(even) { grid-template-columns: 1fr 1.25fr; }
 .style-card:nth-child(even) .shot { order: 2; }
-/* The whole screenshot, never cropped (a crop cut the HUD in half): centred at its own 16:9, the
-   room the text leaves above and below filled with a dim, blurred copy of it. */
-.style-card .shot { position: relative; min-height: 260px; background: #000; overflow: hidden; display: grid; align-items: center; }
-.style-card .shot::before {
-  content: ""; position: absolute; inset: -30px;
-  background: var(--shot) center / cover; filter: blur(18px) brightness(0.4) saturate(0.85);
-}
-.style-card .shot img { position: relative; width: 100%; height: auto; box-shadow: 0 0 30px rgba(0, 0, 0, 0.6); }
+/* The whole screenshot, never cropped (a crop cut the HUD in half): centred at its own 16:9 on the
+   card's own panel, so the room the text leaves above and below is the panel the text stands on. */
+.style-card .shot { min-height: 260px; display: grid; align-items: center; }
+.style-card .shot img { width: 100%; height: auto; box-shadow: 0 0 0 1px rgba(217, 163, 90, 0.18), 0 10px 30px rgba(0, 0, 0, 0.5); }
 .style-card .body { padding: 28px 30px; }
 .style-card h3 { font-size: 1.9rem; }
 .style-card .kind { display: inline-block; font: 700 0.78rem/1 var(--body); letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin: 8px 0 6px; }
